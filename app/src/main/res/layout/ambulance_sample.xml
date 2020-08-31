@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="8dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="8dp"
+    app:cardCornerRadius="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="15"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="11"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/ambulance_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/colorText"
+                android:text="Jony Ambulance Service"
+                android:paddingLeft="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/ambulance_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01756135485"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-light"
+                />
+
+            <TextView
+                android:id="@+id/ambulance_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dhaka"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorText"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ambulance_call_icon"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_phone_black_24dp"
+            android:padding="30dp"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
