@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DoctorListActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/editText_searchDoctors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search Doctors"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_doctor_list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText_searchDoctors"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>
