@@ -12,6 +12,7 @@
         android:layout_width="415dp"
         android:layout_height="160dp"
         android:src="@drawable/loginbg"
+        android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
@@ -42,7 +43,7 @@
         android:id="@+id/editText2"
         android:layout_width="295dp"
         android:layout_height="40dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="150dp"
         android:hint="user name"
         android:textAlignment="center"
         android:textColorHint="@color/ColorHint"
@@ -50,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/editText"
@@ -81,14 +82,14 @@
 
     <TextView
         android:textAlignment="center"
-        android:id="@+id/signinActivity"
+        android:id="@+id/signinActivity_Text"
         android:layout_width="305dp"
         android:layout_height="46dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@color/colorActivityBackground"
         android:text="Not you? Click here to Sign up"
         android:textColor="@color/ColorHint"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
@@ -107,7 +108,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signinActivity"
+        app:layout_constraintTop_toBottomOf="@+id/signinActivity_Text"
         app:layout_constraintVertical_bias="0.504" />
 
 
