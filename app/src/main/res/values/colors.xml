@@ -5,5 +5,8 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorText">#111111</color>
     <color name="color_two">#E3E0E0</color>
+    <color name="colorActivityBackground">#FFFFFF</color>
+    <color name="ColorTop">#FF5E57</color>
+    <color name="ColorHint">#5A5A5A</color>
 
 </resources>

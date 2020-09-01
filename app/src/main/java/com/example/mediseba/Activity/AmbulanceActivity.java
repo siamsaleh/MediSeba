@@ -13,7 +13,7 @@ import com.example.mediseba.Adapter.AmbulanceAdapter;
 import com.example.mediseba.R;
 
 public class AmbulanceActivity extends AppCompatActivity {
-    
+
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -34,5 +34,4 @@ public class AmbulanceActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
     }
-
 }

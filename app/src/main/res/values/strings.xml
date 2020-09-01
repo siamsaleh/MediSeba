@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MediSeba</string>
+    <string name="app_name">Tech Doc</string>
 
     <string-array name="gridView_homePage">
         <item>Corona Virus</item>
