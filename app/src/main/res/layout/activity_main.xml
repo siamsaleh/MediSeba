@@ -1,124 +1,477 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.MainActivity">
+    tools:context=".Activity.MainActivity"
+    android:background="@color/colorActivityBackground"
+    >
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/ColorTolbar"
+        app:cardElevation="3dp"
+        app:cardMaxElevation="5dp"
+        android:layout_alignParentTop="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/colorActivityBackground"
+                android:fontFamily="sans-serif-light"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/ColorTolbar"
+        app:cardElevation="3dp"
+        app:cardMaxElevation="5dp"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/imergencyDoctor"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/callwhite"
+                android:layout_gravity="center"
+                />
+            <ImageView
+                android:id="@+id/homeButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/homebutton"
+                android:layout_gravity="center"
+                />
+            <ImageView
+                android:id="@+id/profileButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_white"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView"
+        android:layout_above="@id/cardView1"
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:src="@drawable/hotline"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
                 >
-                <HorizontalScrollView
-                    android:id="@+id/horizontalScrollView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    >
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        >
-                        <Button
-                            android:id="@+id/button_ambulance"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Ambulance"
-                            />
-                        <Button
-                            android:id="@+id/button2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Button"
-                            />
-                        <Button
-                            android:id="@+id/button3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Button"
-                            />
-                        <Button
-                            android:id="@+id/button4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Button"
-                            />
-                        <Button
-                            android:id="@+id/button5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Button"
-                            />
-                    </LinearLayout>
-                </HorizontalScrollView>
-
-
-                <TextView
-                    android:id="@+id/text_DocAviDep"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Doctor's Category"
-                    android:textSize="20dp"
-                    android:fontFamily="sans-serif-light"
-                    android:textStyle="normal"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:textColor="@color/colorText"
-                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    tools:ignore="MissingConstraints" />
-
-                <View
-                    android:id="@+id/view1"
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/color_two"
-                    app:layout_constraintTop_toBottomOf="@+id/text_DocAviDep"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    />
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/view1"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_margin="10dp"
                     >
-                    <GridView
-                        android:id="@+id/gridView_HomePage"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:numColumns="3"
-                        android:padding="10dp"
-                        android:horizontalSpacing="10dp"
-                        android:verticalSpacing="10dp"
+
+                    <Button
+                        android:id="@+id/home_doctor_Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/homedoctor"
+                        android:drawablePadding="5dp"
+                        android:background="@color/colorActivityBackground"
+                        android:text="@string/doctor_string"
                         />
+                    <Button
+                        android:id="@+id/home_appointment_Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/homeappoinment"
+                        android:drawablePadding="5dp"
+                        android:background="@color/colorActivityBackground"
+                        android:text="@string/appointment_string"
+                        />
+
                 </LinearLayout>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_margin="10dp"
+                    >
+
+                    <Button
+                        android:id="@+id/home_medicine_Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/homemedicine"
+                        android:drawablePadding="5dp"
+                        android:background="@color/colorActivityBackground"
+                        android:text="@string/medicine_string"
+                        />
+                    <Button
+                        android:id="@+id/home_ambulance_Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/homeambulance"
+                        android:drawablePadding="5dp"
+                        android:background="@color/colorActivityBackground"
+                        android:text="@string/ambulance_string"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_margin="10dp"
+                    >
+
+                    <Button
+                        android:id="@+id/home_check_up_Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/homehomecheckup"
+                        android:drawablePadding="5dp"
+                        android:background="@color/colorActivityBackground"
+                        android:text="@string/home_check_up_string"
+                        />
+                    <Button
+                        android:id="@+id/home_dis_test_Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/homediseaseidentification"
+                        android:drawablePadding="5dp"
+                        android:background="@color/colorActivityBackground"
+                        android:text="@string/check_dis_string"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
         </LinearLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:cardBackgroundColor="@color/ColorTolbar"-->
+<!--        app:cardElevation="3dp"-->
+<!--        app:cardMaxElevation="5dp"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="@string/app_name"-->
+<!--                android:textColor="@color/colorActivityBackground"-->
+<!--                android:fontFamily="sans-serif-light"-->
+<!--                android:textSize="20sp"-->
+<!--                android:gravity="center"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:cardBackgroundColor="@color/ColorTolbar"-->
+<!--        app:cardElevation="3dp"-->
+<!--        app:cardMaxElevation="5dp"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:weightSum="3"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:id="@+id/imergencyDoctor"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/callwhite"-->
+<!--                android:layout_gravity="center"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/homeButton"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/homebutton"-->
+<!--                android:layout_gravity="center"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/profileButton"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/profile_white"-->
+<!--                android:layout_gravity="center"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        -->
+<!--        app:layout_constraintTop_toBottomOf="@id/cardView"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/cardView1"-->
+<!--        >-->
+
+<!--    </LinearLayout>-->
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/cardView"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/cardView1"-->
+<!--        >-->
+<!--        -->
+<!--    </ScrollView>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cardView"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+<!--                <HorizontalScrollView-->
+<!--                    android:id="@+id/horizontalScrollView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintRight_toRightOf="parent"-->
+<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    >-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        >-->
+<!--                        <Button-->
+<!--                            android:id="@+id/button_ambulance"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Ambulance"-->
+<!--                            />-->
+<!--                        <Button-->
+<!--                            android:id="@+id/button2"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Button"-->
+<!--                            />-->
+<!--                        <Button-->
+<!--                            android:id="@+id/button3"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Button"-->
+<!--                            />-->
+<!--                        <Button-->
+<!--                            android:id="@+id/button4"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Button"-->
+<!--                            />-->
+<!--                        <Button-->
+<!--                            android:id="@+id/button5"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Button"-->
+<!--                            />-->
+<!--                    </LinearLayout>-->
+<!--                </HorizontalScrollView>-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/text_DocAviDep"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Doctor's Category"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:fontFamily="sans-serif-light"-->
+<!--                    android:textStyle="normal"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:textColor="@color/colorText"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"-->
+<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    tools:ignore="MissingConstraints" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/view1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:background="@color/color_two"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/text_DocAviDep"-->
+<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    app:layout_constraintRight_toRightOf="parent"-->
+<!--                    />-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/view1"-->
+<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    app:layout_constraintRight_toRightOf="parent"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    >-->
+<!--                    <GridView-->
+<!--                        android:id="@+id/gridView_HomePage"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:numColumns="3"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:horizontalSpacing="10dp"-->
+<!--                        android:verticalSpacing="10dp"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+</RelativeLayout>

@@ -8,5 +8,6 @@
     <color name="colorActivityBackground">#FFFFFF</color>
     <color name="ColorTop">#FF5E57</color>
     <color name="ColorHint">#5A5A5A</color>
+    <color name="ColorTolbar">#292828</color>
 
 </resources>

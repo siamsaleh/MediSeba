@@ -1,5 +1,23 @@
 <resources>
     <string name="app_name">Tech Doc</string>
+    <string name="doctor_string">ডাক্তার</string>
+    <string name="appointment_string">অ্যাপয়েন্টমেন্ট</string>
+    <string name="medicine_string">ওষুধ</string>
+    <string name="ambulance_string">অ্যাম্বুলেন্স</string>
+    <string name="home_check_up_string">হোম চেক আপ</string>
+    <string name="check_dis_string">রোগ সনাক্তকরণ</string>
+
+    <string name="covid_string">কোভিড</string>
+    <string name="skin_string">ত্বক</string>
+    <string name="medi_string">মেডিসিন</string>
+    <string name="surgery_string">সার্জারি</string>
+    <string name="eye_string">চক্ষু</string>
+    <string name="dentist_string">দন্ত চিকিৎসক</string>
+    <string name="chest_string">বক্ষ</string>
+    <string name="brain_string">মস্তিষ্ক</string>
+    <string name="bones_string">অর্থোপেডিক</string>
+    <string name="child_string">শিশু</string>
+
 
     <string-array name="gridView_homePage">
         <item>Corona Virus</item>
