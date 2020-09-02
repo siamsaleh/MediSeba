@@ -4,6 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.DocCodeActivity">
+    tools:context=".Activity.DocCodeActivity"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="415dp"
+        android:layout_height="160dp"
+        android:src="@drawable/loginbg"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/techdocloginandsignuplogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintBottom_toBottomOf="@id/imageView3"
+        />
+
+    <EditText
+        android:id="@+id/editText_searchDoctors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+
+        android:hint="Doctor Code"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="For get Code Contact here - saleh.ahmed.siam@g.bracu.ac.bd"
+        app:layout_constraintTop_toBottomOf="@+id/editText_searchDoctors"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <Button
+        android:id="@+id/next_button_Code_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:background="@drawable/custombutton"
+        android:textAllCaps="false"
+        android:textColor="@color/colorActivityBackground"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
