@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 //    private int [] pics = {R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher};
 //    private String[] items;
 
-
     private Button doctorButton, appointmentButton, medicine_button, ambulance_button, homeCheckUpButton, disTestButton;
     private ImageView callCenterImage, emergencyCallButton, homeImage, profileImage;
 
