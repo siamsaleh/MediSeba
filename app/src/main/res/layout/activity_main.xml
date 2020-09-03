@@ -97,33 +97,33 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-<!--            <ImageView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:src="@drawable/hotline"-->
-<!--                android:layout_marginTop="5dp"-->
-<!--                android:scaleType="fitXY"-->
-<!--                android:layout_marginStart="30dp"-->
-<!--                android:layout_marginEnd="30dp"-->
-<!--                android:layout_marginBottom="20dp"-->
-<!--                />-->
-
-            <com.synnapps.carouselview.CarouselView
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:pageColor="@color/colorActivityBackground"
-                app:fillColor="@color/colorPrimary"
-                app:slideInterval="3000"
-                app:radius="6dp"
-                app:strokeColor="#ff777777"
-                app:strokeWidth="1dp"
-                android:id="@+id/carouselView"
-                android:scaleType="fitXY"
+                android:src="@drawable/hotline"
                 android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="20dp"
                 />
+
+<!--            <com.synnapps.carouselview.CarouselView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:pageColor="@color/colorActivityBackground"-->
+<!--                app:fillColor="@color/colorPrimary"-->
+<!--                app:slideInterval="3000"-->
+<!--                app:radius="6dp"-->
+<!--                app:strokeColor="#ff777777"-->
+<!--                app:strokeWidth="1dp"-->
+<!--                android:id="@+id/carouselView"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginStart="30dp"-->
+<!--                android:layout_marginEnd="30dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                />-->
 
             <LinearLayout
                 android:layout_width="match_parent"

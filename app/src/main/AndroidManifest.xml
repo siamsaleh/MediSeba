@@ -14,53 +14,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.AppoinmentActivity"></activity>
-        <activity android:name=".Activity.DoctorDescriptionActivity" />
-        <activity
-            android:name=".Activity.TestDisActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/loginTheme" />
-        <activity
-            android:name=".Activity.DoctorCetegoryActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/loginTheme" />
-        <activity
-            android:name=".Activity.DocCodeActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/loginTheme" />
-        <activity
-            android:name=".Activity.DoctorCodeActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/loginTheme" />
-        <activity
-            android:name=".Activity.DocOrPesActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/loginTheme">
+
+        <activity android:name=".Activity.DoctorHomeActivityRequest" android:theme="@style/loginTheme" android:launchMode="singleTask"></activity>
+
+        <activity android:name=".Activity.DoctorHomeActivityAppointment" android:theme="@style/loginTheme" android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Activity.RegisterActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/loginTheme" />
-        <activity
-            android:name=".Activity.LogInActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/loginTheme" />
-        <activity
-            android:name=".Activity.AmbulanceActivity"
-            android:launchMode="singleTask" />
-        <activity
-            android:name=".Activity.DoctorListActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/loginTheme" />
-        <activity
-            android:name=".Activity.MainActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/loginTheme"></activity>
+
+        <activity android:name=".Activity.AppoinmentActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" ></activity>
+
+        <activity android:name=".Activity.DoctorDescriptionActivity" android:theme="@style/loginTheme" android:launchMode="singleTask"></activity>
+
+        <activity android:name=".Activity.TestDisActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" ></activity>
+
+        <activity android:name=".Activity.DoctorCetegoryActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" ></activity>
+
+        <activity android:name=".Activity.DocCodeActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" />
+
+        <activity android:name=".Activity.DoctorCodeActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" />
+
+        <activity android:name=".Activity.DocOrPesActivity" android:launchMode="singleTask" android:theme="@style/loginTheme">
+
+
+        </activity>
+
+        <activity android:name=".Activity.RegisterActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" />
+
+        <activity android:name=".Activity.LogInActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" />
+
+        <activity android:name=".Activity.AmbulanceActivity" android:launchMode="singleTask" />
+
+        <activity android:name=".Activity.DoctorListActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" />
+
+        <activity android:name=".Activity.MainActivity" android:launchMode="singleTask" android:theme="@style/loginTheme"></activity>
     </application>
 
 </manifest>

@@ -5,17 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
+
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-import com.example.mediseba.Adapter.HomeGridAdapter;
 import com.example.mediseba.R;
-import com.synnapps.carouselview.CarouselView;
-import com.synnapps.carouselview.ImageClickListener;
-import com.synnapps.carouselview.ImageListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -78,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         appointmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DoctorCetegoryActivity.class));
+                startActivity(new Intent(MainActivity.this, AppoinmentActivity.class));
             }
         });
 
@@ -112,21 +107,21 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        CarouselView carouselView = findViewById(R.id.carouselView);
-        carouselView.setPageCount(imageSlide.length);
-        carouselView.setImageListener(new ImageListener() {
-            @Override
-            public void setImageForPosition(int position, ImageView imageView) {
-                imageView.setImageResource(imageSlide[position]);
-            }
-        });
-
-        carouselView.setImageClickListener(new ImageClickListener() {
-            @Override
-            public void onClick(int position) {
-                Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        CarouselView carouselView = findViewById(R.id.carouselView);
+//        carouselView.setPageCount(imageSlide.length);
+//        carouselView.setImageListener(new ImageListener() {
+//            @Override
+//            public void setImageForPosition(int position, ImageView imageView) {
+//                imageView.setImageResource(imageSlide[position]);
+//            }
+//        });
+//
+//        carouselView.setImageClickListener(new ImageClickListener() {
+//            @Override
+//            public void onClick(int position) {
+//                Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
 
 
