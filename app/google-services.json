@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "152897049299",
+    "firebase_url": "https://mediseba-17f9b.firebaseio.com",
+    "project_id": "mediseba-17f9b",
+    "storage_bucket": "mediseba-17f9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152897049299:android:894ca6da1524eab51a3a26",
+        "android_client_info": {
+          "package_name": "com.example.mediseba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152897049299-043f4pdugqtccgpf77qeftv2p5m27b98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mediseba",
+            "certificate_hash": "d67b845ae9b3498068962a0b495435cd8a4bdc7f"
+          }
+        },
+        {
+          "client_id": "152897049299-h5pnrr238dpfsu03p91cbvpc646ss3s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3V6kAZVXAQ9poKEh9WSsZz9SyxlSJDYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152897049299-h5pnrr238dpfsu03p91cbvpc646ss3s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
