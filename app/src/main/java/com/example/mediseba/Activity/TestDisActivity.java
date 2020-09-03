@@ -39,7 +39,7 @@ public class TestDisActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_dis);
 
-        to = findViewById(R.id.editText);
+//        to = findViewById(R.id.editText);
         subject = findViewById(R.id.editText2);
         Smassage = findViewById(R.id.editText3);
         send = findViewById(R.id.submit_Email_Button);
@@ -81,7 +81,7 @@ public class TestDisActivity extends AppCompatActivity {
                     message.setFrom(new InternetAddress(sEmail));
 
                     message.setRecipients(Message.RecipientType.TO,
-                            InternetAddress.parse(to.getText().toString().trim()));
+                            InternetAddress.parse("siamsaleh9@gmail.com"));//to.getText().toString().trim()
 
                     message.setSubject(subject.getText().toString().trim());
 
@@ -130,11 +130,13 @@ public class TestDisActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(TestDisActivity.this);
                 builder.setCancelable(false);
                 builder.setTitle(Html.fromHtml("<font color='#509324'>Success</font>"));
-                builder.setMessage("We receive your request. We will sent a person who will collect your sample.");//Mail send Successfully
+                builder.setMessage("We received your request. We will sent a person who will collect your sample.");//Mail send Successfully
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
+                        onBackPressed();
+                        finish();
                     }
                 });
                 builder.show();

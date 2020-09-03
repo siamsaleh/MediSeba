@@ -18,11 +18,7 @@
         <activity android:name=".Activity.DoctorHomeActivityRequest" android:theme="@style/loginTheme" android:launchMode="singleTask"></activity>
 
         <activity android:name=".Activity.DoctorHomeActivityAppointment" android:theme="@style/loginTheme" android:launchMode="singleTask">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity android:name=".Activity.AppoinmentActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" ></activity>
@@ -38,7 +34,11 @@
         <activity android:name=".Activity.DoctorCodeActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" />
 
         <activity android:name=".Activity.DocOrPesActivity" android:launchMode="singleTask" android:theme="@style/loginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
 
@@ -50,7 +50,9 @@
 
         <activity android:name=".Activity.DoctorListActivity" android:launchMode="singleTask" android:theme="@style/loginTheme" />
 
-        <activity android:name=".Activity.MainActivity" android:launchMode="singleTask" android:theme="@style/loginTheme"></activity>
+        <activity android:name=".Activity.MainActivity" android:launchMode="singleTask" android:theme="@style/loginTheme">
+
+        </activity>
     </application>
 
 </manifest>
