@@ -13,6 +13,9 @@ import android.widget.Toast;
 
 import com.example.mediseba.Adapter.HomeGridAdapter;
 import com.example.mediseba.R;
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageClickListener;
+import com.synnapps.carouselview.ImageListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 //    private GridView gridView;
 //    private int [] pics = {R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher};
 //    private String[] items;
+
+    private int[] imageSlide = {R.drawable.hotline,R.drawable.hotline,R.drawable.hotline,R.drawable.hotline};
 
     private Button doctorButton, appointmentButton, medicine_button, ambulance_button, homeCheckUpButton, disTestButton;
     private ImageView callCenterImage, emergencyCallButton, homeImage, profileImage;
@@ -101,7 +106,25 @@ public class MainActivity extends AppCompatActivity {
         disTestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DoctorCetegoryActivity.class));
+                startActivity(new Intent(MainActivity.this, TestDisActivity.class));
+            }
+        });
+
+
+
+        CarouselView carouselView = findViewById(R.id.carouselView);
+        carouselView.setPageCount(imageSlide.length);
+        carouselView.setImageListener(new ImageListener() {
+            @Override
+            public void setImageForPosition(int position, ImageView imageView) {
+                imageView.setImageResource(imageSlide[position]);
+            }
+        });
+
+        carouselView.setImageClickListener(new ImageClickListener() {
+            @Override
+            public void onClick(int position) {
+                Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
             }
         });
 
