@@ -24,14 +24,14 @@
         <ImageView
             android:id="@+id/patient_pic_req"
             android:layout_width="0dp"
-            android:layout_weight="4"
+            android:layout_weight="3"
             android:layout_height="match_parent"
             android:src="@drawable/profilepicture"
             android:padding="10dp"
             />
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="11"
+            android:layout_weight="9"
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
@@ -61,47 +61,28 @@
                 android:fontFamily="sans-serif-light"
                 />
 
-            <LinearLayout
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/patient_phn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="2"
-                android:orientation="horizontal"
-                android:layout_marginTop="4dp"
-                >
-
-
-                <Button
-                    android:id="@+id/accept_patient"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/custom_accept_button"
-                    android:text="Accept"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorText"
-                    android:fontFamily="sans-serif-medium"
-                    android:padding="10dp"
-                    />
-
-                <Button
-                    android:id="@+id/decline_patient"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/custom_reject_button"
-                    android:text="Reject"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorText"
-                    android:fontFamily="sans-serif-medium"
-                    />
-
-            </LinearLayout>
-
-
-
+                android:text="01686768903"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="20dp"
+                />
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/patient_call"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_phone_black_24dp"
+            android:padding="20dp"
+            />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
