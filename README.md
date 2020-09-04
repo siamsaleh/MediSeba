@@ -14,4 +14,12 @@ In this present time where the whole world is facing a global pandemic due to Co
 
 
 
-![Capture](https://user-images.githubusercontent.com/55757774/92282603-c2d53a00-ef1f-11ea-9a2e-f497f8e0381f.PNG) ![Capture2](https://user-images.githubusercontent.com/55757774/92286476-fbc5dc80-ef28-11ea-89d7-39a96eea40d9.PNG)
+![Capture](https://user-images.githubusercontent.com/55757774/92282603-c2d53a00-ef1f-11ea-9a2e-f497f8e0381f.PNG)       ![Capture2](https://user-images.githubusercontent.com/55757774/92286476-fbc5dc80-ef28-11ea-89d7-39a96eea40d9.PNG)
+
+
+
+## 1)Heath care
+
+    Among the three main features in the healthcare part the user will be able to find all the healthcare related information that are given bellow
+    
+    * Doctors selection
