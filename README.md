@@ -8,9 +8,9 @@
 In this present time where the whole world is facing a global pandemic due to Covid 19  and going out of the house has been equal to risking our life , people are being afraid of going to the hospitals to do their checkups or test for Covid. As the hospitals are almost filled with Covid patients going to the hospital has become more risky. For this problem we have come through with a app called Tech Doc Your Mobile Hospital. This app will help the people of our country to get their health checkup done in home keeping them safe and healthy. The app has many features that will help the patients with their checkups. This app is very user friendly and as a result almost all type of people of our country can use it.
 
 ## The app is consisted of 3 main features
-  1. Heathcare
-  2. Live Doctor
-  3. Membership
+  #### 1. Heathcare
+  #### 2. Live Doctor
+  #### 3. Membership
 
 
 
@@ -20,7 +20,7 @@ In this present time where the whole world is facing a global pandemic due to Co
 
 ## 1)Heath care
 
-   Among the three main features in the healthcare part the user will be able to find all the healthcare related information that are given bellow
+   ##### Among the three main features in the healthcare part the user will be able to find all the healthcare related information that are given bellow
     
    ### Doctors selection
 Among the feature there is the option where the patients can find the doctor of different category and select their favorable doctors to console with them. They will be able to select the doctor seeing the ratings. The description of the doctors and all the details of the doctors will be given. So the patients can select the one they want to talk to and get the appointment. 
@@ -61,11 +61,11 @@ In this app by giving some answers to the questions related to a disease that mi
   
 ## 2)Live Doctor Guidance
 
-There is also a helpline that is 24/7 active so that the patients can take quick tips at any time with a cost or 2.5 tk per minute. Here the patients will be able to contact with a doctor in any of the hour to get quick tips and information regarding health matter. This will help the patients to take quick measures in short period of time.
+##### There is also a helpline that is 24/7 active so that the patients can take quick tips at any time with a cost or 2.5 tk per minute. Here the patients will be able to contact with a doctor in any of the hour to get quick tips and information regarding health matter. This will help the patients to take quick measures in short period of time.
 
 ## 3)Membership
 
-#### One of the most special features of this app is that there will be a membership bar where people can become member and get special equipment which will track their heath data. There will be two types of membership, regular membership and premium membership.
+##### One of the most special features of this app is that there will be a membership bar where people can become member and get special equipment which will track their heath data. There will be two types of membership, regular membership and premium membership.
 
 ### Regular Membership
 
@@ -78,7 +78,7 @@ This membership will provide the users to get small loans to use of their treatm
 
 
 
-In short we can say that this app will be a personal doctor for the user. All in one pace. Easy, helpful and time manageable in a pandemic time like this.
+##### In short we can say that this app will be a personal doctor for the user. All in one pace. Easy, helpful and time manageable in a pandemic time like this.
 
 
 
