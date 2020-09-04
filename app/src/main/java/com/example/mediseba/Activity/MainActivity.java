@@ -105,6 +105,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.home_membership_Button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        findViewById(R.id.home_selftest_Button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        findViewById(R.id.home_user_guide_Button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
+
 
 
 //        CarouselView carouselView = findViewById(R.id.carouselView);

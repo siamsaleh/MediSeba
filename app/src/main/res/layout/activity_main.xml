@@ -223,6 +223,79 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_margin="10dp"
+                    >
+
+                    <Button
+                        android:id="@+id/home_membership_Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/membership"
+                        android:drawablePadding="5dp"
+                        android:background="@color/colorActivityBackground"
+                        android:text="@string/membership_string"
+                        />
+
+                    <Button
+                        android:id="@+id/home_selftest_Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/check"
+                        android:drawablePadding="5dp"
+                        android:background="@color/colorActivityBackground"
+                        android:text="সেল্ফ টেস্ট"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_margin="10dp"
+                    >
+                    <Button
+                        android:id="@+id/home_user_guide_Button"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/guide"
+                        android:drawablePadding="5dp"
+                        android:background="@color/colorActivityBackground"
+                        android:text="আপ গাইড"
+                        />
+
+<!--                    <Button-->
+<!--                        android:id="@+id/home_user_guide_Button"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:drawableTop="@drawable/guide"-->
+<!--                        android:drawablePadding="5dp"-->
+<!--                        android:background="@color/colorActivityBackground"-->
+<!--                        android:text="@string/check_dis_string"-->
+<!--                        />-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/callguide"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
             </LinearLayout>
 
 

@@ -17,6 +17,7 @@
     <string name="brain_string">মস্তিষ্ক</string>
     <string name="bones_string">অর্থোপেডিক</string>
     <string name="child_string">শিশু</string>
+    <string name="membership_string">মেম্বারশিপ</string>
 
 
     <string-array name="gridView_homePage">
