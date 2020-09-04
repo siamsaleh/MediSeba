@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.DoctorListActivity">
+    tools:context=".Activity.MedicineActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Doctor List"
+            android:text="Medicine"
             android:textColor="@color/colorActivityBackground"
             android:fontFamily="sans-serif-light"
             android:textSize="20sp"
@@ -43,11 +43,10 @@
         <!--        </LinearLayout>-->
     </androidx.cardview.widget.CardView>
 
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/cardView"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,11 +60,12 @@
                 android:layout_margin="10dp"
                 />
 
-            <include layout="@layout/doctor_sample"/>
-            <include layout="@layout/doctor_sample"/>
-            <include layout="@layout/doctor_sample"/>
-            <include layout="@layout/doctor_sample"/>
+            <include layout="@layout/medicine_sample"/>
+            <include layout="@layout/medicine_sample"/>
+            <include layout="@layout/medicine_sample"/>
+            <include layout="@layout/medicine_sample"/>
         </LinearLayout>
 
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

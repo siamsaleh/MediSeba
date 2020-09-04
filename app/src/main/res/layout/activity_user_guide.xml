@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.DoctorListActivity">
+    tools:context=".Activity.UserGuideActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -16,9 +16,10 @@
         app:cardBackgroundColor="@color/ColorTolbar"
         app:cardElevation="3dp"
         app:cardMaxElevation="5dp"
+        android:layout_alignParentTop="true"
         >
         <ImageView
-            android:id="@+id/backButton_ambulance"
+            android:id="@+id/backButton_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_arrow_back_black_24dp"
@@ -30,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Doctor List"
+            android:text="User guide"
             android:textColor="@color/colorActivityBackground"
             android:fontFamily="sans-serif-light"
             android:textSize="20sp"
@@ -43,28 +44,16 @@
         <!--        </LinearLayout>-->
     </androidx.cardview.widget.CardView>
 
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/cardView"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Search"
-                android:layout_margin="10dp"
-                />
+            android:orientation="vertical">
 
-            <include layout="@layout/doctor_sample"/>
-            <include layout="@layout/doctor_sample"/>
-            <include layout="@layout/doctor_sample"/>
-            <include layout="@layout/doctor_sample"/>
         </LinearLayout>
 
     </ScrollView>

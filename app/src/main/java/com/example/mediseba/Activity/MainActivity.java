@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         medicine_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DoctorCetegoryActivity.class));
+                startActivity(new Intent(MainActivity.this, MedicineActivity.class));
             }
         });
 
@@ -112,17 +112,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.home_selftest_Button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+//        findViewById(R.id.home_selftest_Button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
 
         findViewById(R.id.home_user_guide_Button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+
             }
         });
 
