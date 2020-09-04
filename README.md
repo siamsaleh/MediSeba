@@ -22,4 +22,6 @@ In this present time where the whole world is facing a global pandemic due to Co
 
    Among the three main features in the healthcare part the user will be able to find all the healthcare related information that are given bellow
     
-   *Doctors selection
+   * Doctors selection
+   Among the feature there is the option where the patients can find the doctor of different category and select their favorable doctors to console with them. They will be able to select the doctor seeing the ratings. The description of the doctors and all the details of the doctors will be given. So the patients can select the one they want to talk to and get the appointment. 
+  
