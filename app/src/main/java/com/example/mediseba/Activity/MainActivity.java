@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.home_membership_Button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(MainActivity.this, MembershipActivity.class));
             }
         });
 
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.home_user_guide_Button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(MainActivity.this, UserGuideActivity.class));
             }
         });
 

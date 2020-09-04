@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MembershipActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/ColorTolbar"
+        app:cardElevation="3dp"
+        app:cardMaxElevation="5dp"
+        >
+        <ImageView
+            android:id="@+id/backButton_ambulance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@color/colorActivityBackground"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Membership"
+            android:textColor="@color/colorActivityBackground"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            >-->
+        <!--        </LinearLayout>-->
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/bloodTest_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:text="For get membership guideline please call hot line or contact this email Email- saleh.ahmed.siam@g.bracu.ac.bd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
