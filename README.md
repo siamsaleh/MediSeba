@@ -14,7 +14,24 @@ In this present time where the whole world is facing a global pandemic due to Co
 
 
 
+
+
+
+
+
+
+
+
+
 ![Capture](https://user-images.githubusercontent.com/55757774/92282603-c2d53a00-ef1f-11ea-9a2e-f497f8e0381f.PNG)       ![Capture2](https://user-images.githubusercontent.com/55757774/92286476-fbc5dc80-ef28-11ea-89d7-39a96eea40d9.PNG)
+
+
+
+
+
+
+
+
 
 
 
@@ -26,7 +43,19 @@ In this present time where the whole world is facing a global pandemic due to Co
 Among the feature there is the option where the patients can find the doctor of different category and select their favorable doctors to console with them. They will be able to select the doctor seeing the ratings. The description of the doctors and all the details of the doctors will be given. So the patients can select the one they want to talk to and get the appointment. 
 
 
+
+
+
+
+
 ![Capture6](https://user-images.githubusercontent.com/55757774/92286836-ea310480-ef29-11ea-9254-ecea291fd760.PNG)
+
+
+
+
+
+
+
 
    ### Appointment schedule
    
@@ -50,7 +79,14 @@ As the workplace of the hospital is not good in this current situation people ha
 People can be able to give their blood sample, urine sample etc. just sitting at home and have them tested for different disease by just clicking to our disease finder bar.
 
 
+
+
+
 ![Capture4](https://user-images.githubusercontent.com/55757774/92287053-717e7800-ef2a-11ea-8ea8-d17f2a467309.PNG)
+
+
+
+
 
 
   ### Quick Checkup
@@ -58,10 +94,28 @@ People can be able to give their blood sample, urine sample etc. just sitting at
 In this app by giving some answers to the questions related to a disease that might have affected a patient, he or she can get an overview of what he or she might be facing and also be able to get the information related to the disease and which doctors to console.
 
 
+
+
+
+
+
+
+
+
   
 ## 2)Live Doctor Guidance
 
 ##### There is also a helpline that is 24/7 active so that the patients can take quick tips at any time with a cost or 2.5 tk per minute. Here the patients will be able to contact with a doctor in any of the hour to get quick tips and information regarding health matter. This will help the patients to take quick measures in short period of time.
+
+
+
+
+
+
+
+
+
+
 
 ## 3)Membership
 
@@ -75,7 +129,6 @@ Users having this membership will be provided with a health band which will trac
 ### Premium Membership
 
 This membership will provide the users to get small loans to use of their treatments if required and many more premium facilities
-
 
 
 ##### In short we can say that this app will be a personal doctor for the user. All in one pace. Easy, helpful and time manageable in a pandemic time like this.
