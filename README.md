@@ -20,6 +20,6 @@ In this present time where the whole world is facing a global pandemic due to Co
 
 ## 1)Heath care
 
-    Among the three main features in the healthcare part the user will be able to find all the healthcare related information that are given bellow
+   Among the three main features in the healthcare part the user will be able to find all the healthcare related information that are given bellow
     
-    * Doctors selection
+   *Doctors selection
