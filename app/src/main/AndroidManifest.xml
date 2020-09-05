@@ -19,7 +19,8 @@
             android:name=".Activity.MedicineActivity"
             android:launchMode="singleTask"
             android:theme="@style/loginTheme" />
-        <activity android:name=".Activity.UserGuideActivity" android:theme="@style/loginTheme" android:launchMode="singleTask"/>
+        <activity android:name=".Activity.UserGuideActivity" android:theme="@style/loginTheme" android:launchMode="singleTask"></activity>
+
         <activity
             android:name=".Activity.DoctorHomeActivityRequest"
             android:launchMode="singleTask"
