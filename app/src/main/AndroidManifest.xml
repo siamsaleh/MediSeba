@@ -56,7 +56,13 @@
         <activity
             android:name=".Activity.DocOrPesActivity"
             android:launchMode="singleTask"
-            android:theme="@style/loginTheme" />
+            android:theme="@style/loginTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Activity.RegisterActivity"
             android:launchMode="singleTask"
@@ -77,11 +83,7 @@
             android:name=".Activity.MainActivity"
             android:launchMode="singleTask"
             android:theme="@style/loginTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
